@@ -1,6 +1,6 @@
 # Week 5: Writing as Code / Code as Writing
 
-**Instructor:** Jing | **Weeks 5–8 format:** Critical/Creative Reflection
+**Instructor:** Jing 
 
 ---
 
