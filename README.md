@@ -50,7 +50,7 @@ See **[INSTRUCTIONS-TWINE.md](INSTRUCTIONS-TWINE.md)** for a full step-by-step g
 | Store a variable | `(set: $hasKey to true)` |
 | Show text conditionally | `(if: $hasKey)[The door opens.]` |
 
-**In-class activity:** Build a 3-room story with at least 2 decision points and 2 different endings. It can be absurd, poetic, or purely functional — the goal is to feel what it means to write branching rules. You can start by drawing the storyline on a piece of paper or write all the story in paragraphs before translating into a game experience in Twine.
+**In-class activity:** Build a 3-passage/room story with at least 2 decision points and 2 different endings. It can be absurd, poetic, or purely functional — the goal is to feel what it means to write branching rules. You can start by drawing the storyline on a piece of paper or write all the story in paragraphs before translating into a game experience in Twine.
 
 ---
 
