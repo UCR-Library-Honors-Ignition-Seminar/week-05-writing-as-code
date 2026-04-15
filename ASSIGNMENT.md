@@ -12,13 +12,13 @@ If you have not yet read a piece of interactive fiction or seen a Tracery gramma
 
 ## Project
 
-Choose **one** of the following:
+Choose **one** of the following. Do not submit both.
 
 ---
 
 ### Option A: Twine Interactive Story
 
-Build a branching story in [Twine](https://twinery.org) (use the online editor — no download needed).
+Build a branching story in [Twine](https://twinery.org) (click "Use in your Browser" — no download needed).
 
 **Requirements:**
 - At least **3 decision points** where the reader makes a meaningful choice
@@ -27,26 +27,25 @@ Build a branching story in [Twine](https://twinery.org) (use the online editor �
 - The story can be any genre or tone — fiction, memoir-adjacent, absurdist, poetic
 
 **To submit:**
-1. In Twine: click your story name → **"Publish to File"** → a `.html` file downloads
-2. Upload the `.html` file to your GitHub repo (drag and drop via the web interface)
+1. In Twine: click your story name at the bottom → **"Publish to File"** → a `.html` file downloads to your computer
+2. In your GitHub repo: click **"Add file"** → **"Upload files"** → drag in the `.html` file → click **"Commit changes"**
 
 **Step-by-step help:** [INSTRUCTIONS-TWINE.md](INSTRUCTIONS-TWINE.md)
 
 ---
 
-### Option B: Tracery Grammar
+### Option B: Tracery Generative Grammar
 
-Write a generative text grammar in [Tracery](http://tracery.io/editor/) that produces different output every time it runs.
+Build a generative text grammar using the HTML template in [INSTRUCTIONS-TRACERY.md](INSTRUCTIONS-TRACERY.md).
 
 **Requirements:**
 - At least **5 named symbol categories** (lists of words/phrases)
-- Generates at least **3 structurally different types of output** (e.g., a character, a place, and an event — not just variations of the same sentence)
-- Screenshot at least **10 different generated outputs** and include them in your submission
+- At least **3 structurally different sentence types** in your `"origin"` list (e.g., a character description, a place, and an event — not just variations of the same sentence)
+- At least **10 screenshots** of different generated outputs
 
 **To submit:**
-1. Copy your grammar from the Tracery editor
-2. Create a file called `grammar.json` in your GitHub repo and paste it in
-3. Upload your screenshots (drag and drop, or create a `screenshots/` folder)
+1. Your `grammar.html` file should already be in your repo from Step 3 of the instructions — confirm it is there
+2. In your GitHub repo: click **"Add file"** → **"Upload files"** → upload all screenshots as `.png` or `.jpg` files → click **"Commit changes"**
 
 **Step-by-step help:** [INSTRUCTIONS-TRACERY.md](INSTRUCTIONS-TRACERY.md)
 
@@ -54,7 +53,9 @@ Write a generative text grammar in [Tracery](http://tracery.io/editor/) that pro
 
 ## Reflection
 
-Write a **~300-word reflection** in `reflection.md` using the [reflection template](reflection-template.md).
+Write a **~300-word reflection** by editing `reflection.md` in your repo (click the file → click the pencil icon to edit).
+
+Use the [reflection template](reflection-template.md) as your guide.
 
 **This week's critical prompt (Part 3 of the template):**
 
@@ -64,12 +65,20 @@ Think about: the choices you gave (or didn't give) the reader; the words you put
 
 ---
 
-## Submission
+## Submission Checklist
 
-1. Add your project file(s) — `.html` for Twine, `grammar.json` + screenshots for Tracery
-2. Create `reflection.md` using the reflection template
-3. Commit your changes (add a short commit message describing what you added)
-4. Submit your repo URL on Canvas
+Before submitting, confirm your repo contains:
+
+**If you chose Option A (Twine):**
+- [ ] A `.html` file (your exported Twine story)
+- [ ] `reflection.md` with all 4 sections filled in
+
+**If you chose Option B (Tracery):**
+- [ ] `grammar.html` (your generative grammar)
+- [ ] At least 10 screenshots uploaded as image files
+- [ ] `reflection.md` with all 4 sections filled in
+
+Then paste your GitHub repo URL into the Canvas assignment and submit.
 
 ---
 
