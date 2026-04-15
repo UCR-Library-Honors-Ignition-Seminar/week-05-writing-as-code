@@ -18,7 +18,7 @@ It was created by Kate Compton and used to power thousands of Twitter bots, gene
 
 Go to [tracery.io/editor](http://tracery.io/editor/) — no account needed.
 
-You will see a text editor on the left and a generated output on the right. The editor starts with a sample grammar. Click **"Generate"** a few times to see how it produces different outputs from the same rules.
+You will see a text editor on the left and a generated output on the right. The editor starts with a sample grammar. Click **"Reroll"** a few times to see how it produces different outputs from the same rules.
 
 ---
 
