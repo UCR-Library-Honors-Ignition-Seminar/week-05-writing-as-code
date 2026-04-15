@@ -117,3 +117,4 @@ Variables let you track what the reader has done — useful if you want a choice
 - **Dead ends are fine** — not every path needs to be long. Some of the most effective interactive fiction has very short branches.
 - **You can always go back.** Twine auto-saves in your browser. Your story is there when you return.
 - **Stuck?** The [Twine Cookbook](https://twinery.org/cookbook/) has examples for almost every common pattern.
+- **Experiment** with adding images and other multimedia elements 
