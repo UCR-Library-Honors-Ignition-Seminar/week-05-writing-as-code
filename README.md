@@ -1,4 +1,4 @@
-# Week 5: Writing as Code / Interactive Fiction
+# Week 5: Writing as Code / Code as Writing
 
 **Instructor:** Jing
 
