@@ -1,4 +1,4 @@
-# Week 5 Assignment: Writing as Code / Interactive Fiction
+# Week 5 Assignment: Writing as Code / Code as Writing
 
 **Due:** End of Week 5 | **Late policy:** 20% deduction; accepted through end of Week 6
 
