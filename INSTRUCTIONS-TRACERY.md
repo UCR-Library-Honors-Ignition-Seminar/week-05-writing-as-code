@@ -14,110 +14,161 @@ It was created by Kate Compton and used to power thousands of Twitter bots, gene
 
 ---
 
-## Step 1: Open the Editor
+## Step 1: See a Grammar in Action
 
-Go to [tracery.io/editor](http://tracery.io/editor/) — no account needed.
+Before writing your own, explore what Tracery grammars look like when they run.
 
-You will see a text editor on the left and a generated output on the right. The editor starts with a sample grammar. Click **"Reroll"** a few times to see how it produces different outputs from the same rules.
+Go to the [Tracery editor](http://tracery.io/editor/) and click **"Reroll"** several times — each click generates new text from the same rules. Use the dropdown at the top left to try different preloaded grammars (landscape, nightvale, poem).
+
+> **Note:** The editor is for visualization only — it doesn't accept typed input reliably. You will write your own grammar as an HTML file in the next steps.
 
 ---
 
 ## Step 2: Understand the Structure
 
-A Tracery grammar is a JSON object — a set of named lists:
+A Tracery grammar is a set of named lists. Each list holds options the system can pick from. You reference a list by wrapping its name in `#` signs:
 
-```json
-{
-  "origin": ["The #adj# #noun# #verb# in the #place#."],
-  "adj":    ["quiet", "fractured", "luminous"],
-  "noun":   ["archive", "signal", "corridor"],
-  "verb":   ["drifts", "echoes", "waits"],
-  "place":  ["reading room", "terminal", "distance"]
-}
+```
+"origin": ["The #adj# #noun# #verb# in the #place#."]
 ```
 
-**How it works:**
-- `"origin"` is always the starting point — Tracery runs this first
-- `#symbol#` means "pick a random item from the list named `symbol`"
-- Tracery replaces every `#symbol#` with a random choice from that list
+When Tracery runs this, it replaces `#adj#`, `#noun#`, etc. with a random item from each matching list:
 
-So `"The #adj# #noun# #verb# in the #place#."` might produce:
-
-> *The fractured corridor echoes in the reading room.*
-
-or
-
+> *The fractured corridor echoes in the reading room.*  
 > *The luminous signal drifts in the distance.*
 
-Every time you click Generate, you get a new combination.
+Every run produces a different combination.
 
 ---
 
-## Step 3: Write Your Own Grammar
+## Step 3: Create Your Grammar File
 
-Clear the editor and start fresh. Pick a concept — a character, a place, an event, a feeling — and build rules around it.
+You will write your grammar as a small HTML file. This file runs in any browser — no installation needed.
+
+**In your GitHub Classroom repo:**
+
+1. Click **"Add file"** → **"Create new file"**
+2. Name the file `grammar.html`
+3. Paste the following template and edit the word lists:
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Tracery Grammar</title>
+  <script src="https://unpkg.com/tracery-grammar/tracery.js"></script>
+  <style>
+    body { font-family: Georgia, serif; max-width: 600px; margin: 60px auto; font-size: 1.2em; }
+    button { font-size: 1em; padding: 8px 20px; margin-bottom: 20px; cursor: pointer; }
+    #output { line-height: 1.8; color: #222; }
+  </style>
+</head>
+<body>
+  <button onclick="generate()">Generate</button>
+  <div id="output"></div>
+
+  <script>
+    var rules = {
+      "origin": ["The #adj# #noun# #verb# through the #place#."],
+      "adj":    ["slow", "luminous", "broken", "recursive"],
+      "noun":   ["archive", "signal", "voice", "corridor"],
+      "verb":   ["drifts", "compiles", "surfaces", "echoes"],
+      "place":  ["reading room", "terminal", "network", "silence"]
+    };
+
+    var grammar = tracery.createGrammar(rules);
+
+    function generate() {
+      document.getElementById("output").innerText = grammar.flatten("#origin#");
+    }
+
+    // generate one on load
+    generate();
+  </script>
+</body>
+</html>
+```
+
+4. Click **"Commit changes"**
+
+---
+
+## Step 4: Run Your Grammar
+
+Once committed, your file is hosted on GitHub Pages automatically if your repo has Pages enabled — or you can:
+
+1. Click on `grammar.html` in your repo
+2. Click **"Raw"** to open the raw file
+3. Save the page to your computer (Cmd+S / Ctrl+S)
+4. Open the saved file in your browser
+
+Click **Generate** repeatedly to see different outputs.
+
+---
+
+## Step 5: Write Your Own Grammar
+
+Now replace the example word lists with your own content. Pick a concept — a character, a place, an event, a mood — and build rules around it.
 
 **Example: A character generator**
-```json
-{
-  "origin":      ["#name# is a #adj# #role# who #habit#."],
-  "name":        ["Mira", "Theo", "Sable", "Oren"],
-  "adj":         ["cautious", "restless", "methodical", "impulsive"],
-  "role":        ["archivist", "navigator", "signal operator", "translator"],
-  "habit":       ["never finishes sentences", "collects small stones", "speaks only in questions", "draws maps of places that do not exist"]
-}
+```javascript
+var rules = {
+  "origin":   ["#name# is a #adj# #role# who #habit#."],
+  "name":     ["Mira", "Theo", "Sable", "Oren"],
+  "adj":      ["cautious", "restless", "methodical", "impulsive"],
+  "role":     ["archivist", "navigator", "signal operator", "translator"],
+  "habit":    ["never finishes sentences", "collects small stones", "speaks only in questions", "draws maps of places that do not exist"]
+};
 ```
 
 **Example: A place generator**
-```json
-{
-  "origin":      ["You enter a #size# room. The walls are #material#. It smells like #smell#. In the corner: #detail#."],
-  "size":        ["narrow", "vast", "perfectly square", "circular"],
-  "material":    ["bare concrete", "old wood", "glass", "something soft"],
-  "smell":       ["cedar", "machine oil", "rain", "nothing at all"],
-  "detail":      ["a chair with one leg missing", "a pile of identical envelopes", "a mirror facing the wall", "a plant that should be dead"]
-}
+```javascript
+var rules = {
+  "origin":   ["You enter a #size# room. The walls are #material#. It smells like #smell#. In the corner: #detail#."],
+  "size":     ["narrow", "vast", "perfectly square", "circular"],
+  "material": ["bare concrete", "old wood", "glass", "something soft"],
+  "smell":    ["cedar", "machine oil", "rain", "nothing at all"],
+  "detail":   ["a chair with one leg missing", "a pile of identical envelopes", "a mirror facing the wall", "a plant that should be dead"]
+};
 ```
 
 ---
 
-## Step 4: Nest Symbols Inside Symbols
+## Step 6: Nest Symbols Inside Symbols
 
-You can use a `#symbol#` inside another symbol's list. This creates more complex, layered outputs.
+You can use a `#symbol#` inside another symbol's list to build more complex, layered outputs:
 
-```json
-{
-  "origin":   ["#scene#"],
-  "scene":    ["#character# #action# near the #landmark#."],
-  "character":["the #adj# #noun#"],
-  "adj":      ["silver", "unnamed", "slow"],
-  "noun":     ["figure", "machine", "voice"],
-  "action":   ["waits", "flickers", "reads aloud"],
-  "landmark": ["#landmark_adj# #landmark_noun#"],
-  "landmark_adj": ["collapsed", "half-built", "forgotten"],
-  "landmark_noun":["tower", "station", "archive"]
-}
+```javascript
+var rules = {
+  "origin":        ["#scene#"],
+  "scene":         ["#character# #action# near the #landmark#."],
+  "character":     ["the #adj# #noun#"],
+  "adj":           ["silver", "unnamed", "slow"],
+  "noun":          ["figure", "machine", "voice"],
+  "action":        ["waits", "flickers", "reads aloud"],
+  "landmark":      ["#landmark_adj# #landmark_noun#"],
+  "landmark_adj":  ["collapsed", "half-built", "forgotten"],
+  "landmark_noun": ["tower", "station", "archive"]
+};
 ```
 
 ---
 
-## Step 5: Generate and Screenshot
+## Step 7: Generate Multiple Outputs at Once
 
-1. Click **"Generate"** at least 10 times
-2. Screenshot outputs that surprise you, feel wrong, or feel unexpectedly right
-3. Those moments of surprise are your data — use them in your reflection
+To see 5 outputs every time you click Generate, replace the `generate()` function with:
 
----
+```javascript
+function generate() {
+  var results = [];
+  for (var i = 0; i < 5; i++) {
+    results.push(grammar.flatten("#origin#"));
+  }
+  document.getElementById("output").innerHTML = results.join("<br><br>");
+}
+```
 
-## Step 6: Save Your Grammar
-
-Tracery does not auto-save. When you are happy with your grammar:
-
-1. Select all the text in the editor (Ctrl+A / Cmd+A)
-2. Copy it
-3. Open a new file in a text editor (or directly on GitHub) and paste it
-4. Save as `grammar.json`
-5. Upload to your GitHub Classroom repo
+Screenshot outputs that surprise you, feel wrong, or feel unexpectedly right — those are the moments worth writing about in your reflection.
 
 ---
 
@@ -125,15 +176,16 @@ Tracery does not auto-save. When you are happy with your grammar:
 
 | Problem | Cause | Fix |
 |---------|-------|-----|
-| Nothing generates | Syntax error in JSON | Check for missing commas, unclosed `"` or `[` |
-| `#symbol#` appears literally | Symbol name is misspelled | Make sure the name in `#name#` exactly matches a key in your JSON |
-| Output is too repetitive | Lists are too short | Add more items to each list — aim for 5–8 per symbol |
-| Output is nonsensical | Grammar structure too loose | Read outputs aloud — if nothing makes sense, tighten your sentence structure in `"origin"` |
+| Page is blank, button does nothing | JavaScript error — likely a missing comma or quote | Check every list ends with `]` and every line inside the list ends with `,` except the last one |
+| `#symbol#` appears literally in output | Symbol name is misspelled | Check that the name inside `#...#` exactly matches a key in your `rules` object |
+| Output is too repetitive | Lists are too short | Add more items to each list — aim for 5–8 options per symbol |
+| Output feels random/nonsensical | Grammar structure too loose | Tighten your `"origin"` sentence — the more specific the structure, the more readable the output |
 
 ---
 
 ## Going Further
 
-- Add **multiple origin options** — put more than one sentence in your `"origin"` list and Tracery will pick between different sentence structures
-- Try **recursive symbols** — a symbol that references itself can create endlessly varied output (but be careful: deep recursion can crash the generator)
-- Kate Compton's original [Tracery tutorial](http://www.crystalcodepalace.com/traceryTut.html) covers advanced features like push/pop (saving a variable mid-generation) and modifiers (capitalizing words automatically)
+- **Multiple origin options** — add more than one sentence to the `"origin"` list; Tracery will pick between different sentence structures entirely
+- **Modifiers** — Tracery has built-in text modifiers: `#noun.capitalize#` capitalizes the word, `#noun.s#` pluralizes it, `#noun.a#` adds "a" or "an" automatically
+- **Preview what's next** — in Week 6 you will use this same grammar inside a p5.js sketch, where the generated text can appear as animated visuals on a canvas; everything you build this week carries forward
+- [Kate Compton's Tracery tutorial](https://tracery.io/archival/crystalcodepalace/tracerytut.html) covers advanced features including push/pop (reusing a value across a single generation for consistency)
