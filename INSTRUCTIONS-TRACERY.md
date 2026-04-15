@@ -95,12 +95,9 @@ You will write your grammar as a small HTML file. This file runs in any browser 
 
 ## Step 4: Run Your Grammar
 
-Once committed, your file is hosted on GitHub Pages automatically if your repo has Pages enabled — or you can:
-
 1. Click on `grammar.html` in your repo
-2. Click **"Raw"** to open the raw file
-3. Save the page to your computer (Cmd+S / Ctrl+S)
-4. Open the saved file in your browser
+2. Click the **download icon** (top right, next to the pencil) to save the file to your computer
+3. Open the downloaded file in your browser — double-click it or drag it into a browser window
 
 Click **Generate** repeatedly to see different outputs.
 
