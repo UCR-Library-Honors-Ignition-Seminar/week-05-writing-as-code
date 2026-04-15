@@ -98,21 +98,14 @@ It is not required for the project this week, but it is a useful lens: what does
 ## Resources
 
 ### Tools
-- [Twine](https://twinery.org) — use online, no account needed; click "Use it online"
+- [Twine](https://twinery.org) — use online, no account needed; click "Use in your Browser"
 - [Twine Cookbook](https://twinery.org/cookbook/) — official reference with examples by format (Harlowe, Chapbook, SugarCube)
 - [Tracery Editor and Visualizer](http://tracery.io/editor/) — paste your grammar and see it run
-- [Kate Compton's Tracery Tutorial](http://www.crystalcodepalace.com/traceryTut.html) — the creator's own walkthrough
-
-### Examples to Explore
-- [Electronic Literature Collection Vol. 3](https://collection.eliterature.org/3/) — curated archive of born-digital literary work
-- [Taroko Gorge](https://nickm.com/taroko_gorge/) — generative poetry (Nick Montfort)
-- [9:05](https://adamcadre.ac/calendar/905.html) — short interactive fiction (Adam Cadre)
-- [Shade](https://pr-if.org/play/shade/) — surreal IF (Andrew Plotkin)
-- [ELIZA demo](https://web.njit.edu/~ronkowit/eliza.html) — the 1966 chatbot
+- [Kate Compton's Tracery Tutorial](https://tracery.io/archival/crystalcodepalace/tracerytut.html) — the creator's own walkthrough
 
 ### Further Reading
-- *Twine Game Design* — [Allison Parrish's Twine guide](https://catn.decontextualize.com/twine/) (clear, poetic, approachable)
-- Zoe Quinn, *Depression Quest* — [play it free](http://www.depressionquest.com/); a landmark Twine game about mental health
+- *Twine Game Design* — [Allison Parrish's Twine guide](https://catn.decontextualize.com/twine/) (easy to follow tutorial)
+- Zoe Quinn, *Depression Quest* — [play it free](http://www.depressionquest.com/); a Twine game about mental health
 
 ---
 
