@@ -34,13 +34,12 @@ Write a **~300-word reflection** using the [reflection template](reflection-temp
 
 ## Submission Instructions
 
-1. Create a `week-05/` folder in your GitHub Classroom repo
-2. Add your project files:
+1. Add your project files:
    - Twine: upload the exported `.html` file
    - Tracery: upload the `.json` grammar + screenshots
    - If hosted online: create `links.md` with the URL
-3. Create `week-05/reflection.md`
-4. Commit and submit repo URL on Canvas
+2. Create `reflection.md`
+3. Commit and submit repo URL on Canvas
 
 ---
 
