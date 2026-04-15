@@ -100,7 +100,7 @@ It is not required for the project this week, but it is a useful lens: what does
 ### Tools
 - [Twine](https://twinery.org) — use online, no account needed; click "Use in your Browser"
 - [Twine Cookbook](https://twinery.org/cookbook/) — official reference with examples by format (Harlowe, Chapbook, SugarCube)
-- [Tracery Editor and Visualizer](http://tracery.io/editor/) — paste your grammar and see it run
+- [Tracery Editor and Visualizer](http://tracery.io/editor/) — explore the existing grammars (The editor is finicky when it comes to running your own grammers, so try to experiment with the existing grammers instead)
 - [Kate Compton's Tracery Tutorial](https://tracery.io/archival/crystalcodepalace/tracerytut.html) — the creator's own walkthrough
 
 ### Further Reading
