@@ -106,6 +106,7 @@ It is not required for the project this week, but it is a useful lens: what does
 ### Further Reading
 - *Twine Game Design* — [Allison Parrish's Twine guide](https://catn.decontextualize.com/twine/) (easy to follow tutorial)
 - Zoe Quinn, *Depression Quest* — [play it free](http://www.depressionquest.com/); a Twine game about mental health
+- [More Tracery Tutorial](https://www.andrewzigler.com/blog/sculpting-generative-text-with-tracery/)
 
 ---
 
