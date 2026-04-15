@@ -17,11 +17,11 @@
 
 Long before graphical interfaces, writers and programmers were doing the same thing: writing rules that generated experiences.
 
-**ELIZA (1966)** — Joseph Weizenbaum's program simulated a therapist by pattern-matching words in your sentences and reflecting them back. It had no understanding — only rules. Yet people formed emotional attachments to it. [Try a live ELIZA demo](https://web.njit.edu/~ronkowit/eliza.html).
+**ELIZA (1966)** — Joseph Weizenbaum's program simulated a therapist by pattern-matching words in your sentences and reflecting them back. It had no understanding — only rules. Yet people formed emotional attachments to it. [Read more about ELIZA](https://github.com/oren/eliza-bot).
 
-**Zork (1977)** — a text adventure where you typed commands (`go north`, `take lamp`) and the computer responded with prose. No graphics. Entirely text. It sold hundreds of thousands of copies. [Play Zork in your browser](https://playclassic.games/games/adventure-dos-games-online/play-zork-great-underground-empire-online/).
+**Zork (1977)** — a text adventure where you typed commands (`go north`, `take lamp`) and the computer responded with prose. No graphics. Entirely text. It sold hundreds of thousands of copies. [Read more about Zork](https://github.com/MITDDC/zork).
 
-**Twine** is the direct descendant of Zork — except you are the author, not the player. And **Tracery** is a tool for writing *rules that generate text*, the same underlying idea as ELIZA, but for poetry, character descriptions, and bot voices.
+**Twine** is an open-source tool for telling interactive and non-linear stories, similar to the storytelling experience by Zork and other interactive fiction games. And **Tracery** is a tool for writing *rules that generate text*, the same underlying idea as ELIZA, but for poetry, character descriptions, and bot voices.
 
 ---
 
@@ -31,9 +31,9 @@ Long before graphical interfaces, writers and programmers were doing the same th
 
 Before building, read one short piece of interactive fiction:
 
-- [9:05](https://adamcadre.ac/calendar/905.html) by Adam Cadre — takes about 3 minutes; pay attention to how your assumptions about the story shift
-- [Shade](https://pr-if.org/play/shade/) by Andrew Plotkin — a surreal piece about a room that changes as you explore it
-- Browse the [Electronic Literature Collection Vol. 3](https://collection.eliterature.org/3/) for text-based pieces
+- [9:05](https://adamcadre.ac/if/905.html) by Adam Cadre — takes about 3 minutes; pay attention to how your assumptions about the story shift
+- [Shade](https://www.eblong.com/zarf/zweb/shade/) by Andrew Plotkin — a surreal piece about a room that changes as you explore it
+- Browse the [Infocom Games](https://github.com/historicalsource/) for more interactive fictions
 
 **As you read, notice:** What choices does the author give you? What choices are hidden? When does the text feel like a story and when does it feel like a system?
 
@@ -50,7 +50,7 @@ See **[INSTRUCTIONS-TWINE.md](INSTRUCTIONS-TWINE.md)** for a full step-by-step g
 | Store a variable | `(set: $hasKey to true)` |
 | Show text conditionally | `(if: $hasKey)[The door opens.]` |
 
-**In-class activity:** Build a 3-room story with at least 2 decision points and 2 different endings. It can be absurd, poetic, or purely functional — the goal is to feel what it means to write branching rules.
+**In-class activity:** Build a 3-room story with at least 2 decision points and 2 different endings. It can be absurd, poetic, or purely functional — the goal is to feel what it means to write branching rules. You can start by drawing the storyline on a piece of paper or write all the story in paragraphs before translating into a game experience in Twine.
 
 ---
 
