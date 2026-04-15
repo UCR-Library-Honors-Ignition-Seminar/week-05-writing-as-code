@@ -4,51 +4,82 @@
 
 ---
 
+## Before You Start
+
+If you have not yet read a piece of interactive fiction or seen a Tracery grammar in action, do that first — it will change how you approach the assignment. See the **Examples to Explore** section in [README.md](README.md).
+
+---
+
 ## Project
 
 Choose **one** of the following:
 
+---
+
 ### Option A: Twine Interactive Story
-- At least **3 decision points**
+
+Build a branching story in [Twine](https://twinery.org) (use the online editor — no download needed).
+
+**Requirements:**
+- At least **3 decision points** where the reader makes a meaningful choice
 - At least **6 passages** total
-- A beginning and at least 2 different possible endings
-- Export as HTML (File > Publish to File) and commit to your GitHub repo
+- At least **2 different possible endings**
+- The story can be any genre or tone — fiction, memoir-adjacent, absurdist, poetic
+
+**To submit:**
+1. In Twine: click your story name → **"Publish to File"** → a `.html` file downloads
+2. Upload the `.html` file to your GitHub repo (drag and drop via the web interface)
+
+**Step-by-step help:** [INSTRUCTIONS-TWINE.md](INSTRUCTIONS-TWINE.md)
+
+---
 
 ### Option B: Tracery Grammar
-- Generates at least **3 different types of output**
-- At least **5 symbol categories**
-- Screenshot at least **10 different generated outputs**
-- Include the grammar as a `.json` file
+
+Write a generative text grammar in [Tracery](http://tracery.io/editor/) that produces different output every time it runs.
+
+**Requirements:**
+- At least **5 named symbol categories** (lists of words/phrases)
+- Generates at least **3 structurally different types of output** (e.g., a character, a place, and an event — not just variations of the same sentence)
+- Screenshot at least **10 different generated outputs** and include them in your submission
+
+**To submit:**
+1. Copy your grammar from the Tracery editor
+2. Create a file called `grammar.json` in your GitHub repo and paste it in
+3. Upload your screenshots (drag and drop, or create a `screenshots/` folder)
+
+**Step-by-step help:** [INSTRUCTIONS-TRACERY.md](INSTRUCTIONS-TRACERY.md)
 
 ---
 
 ## Reflection
 
-Write a **~300-word reflection** using the [reflection template](reflection-template.md).
+Write a **~300-word reflection** in `reflection.md` using the [reflection template](reflection-template.md).
 
-**This week's critical prompt (Part 3):**
+**This week's critical prompt (Part 3 of the template):**
 
-> *"How does writing in Twine or Tracery change how you think about authorship? What decisions did the tool force you to make that you wouldn't make in a Word document?"*
+> *How does writing in Twine or Tracery change how you think about authorship? What decisions did the tool force you to make that you wouldn't make in a Word document or a blank page?*
 
----
-
-## Submission Instructions
-
-1. Add your project files:
-   - Twine: upload the exported `.html` file
-   - Tracery: upload the `.json` grammar + screenshots
-   - If hosted online: create `links.md` with the URL
-2. Create `reflection.md`
-3. Commit and submit repo URL on Canvas
+Think about: the choices you gave (or didn't give) the reader; the words you put in lists; what the tool made easy and what it made impossible.
 
 ---
 
-## Grading Criteria
+## Submission
+
+1. Add your project file(s) — `.html` for Twine, `grammar.json` + screenshots for Tracery
+2. Create `reflection.md` using the reflection template
+3. Commit your changes (add a short commit message describing what you added)
+4. Submit your repo URL on Canvas
+
+---
+
+## Grading
 
 | Criterion | Points |
 |-----------|--------|
-| Project meets minimum requirements | 2.5 |
-| Project file(s) committed to GitHub | 0.5 |
-| Reflection: all 4 sections (~300 words) | 1.5 |
+| Project meets minimum requirements (decision points / symbol categories) | 2 |
+| Project demonstrates creative decision-making — not just the tutorial example | 1 |
+| Project file(s) committed and openable | 0.5 |
+| Reflection: all 4 sections, ~300 words | 1 |
 | Reflection critically engages with the authorship prompt | 0.5 |
 | **Total** | **5** |
