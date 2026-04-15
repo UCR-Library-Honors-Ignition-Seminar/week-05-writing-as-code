@@ -60,10 +60,11 @@ See **[INSTRUCTIONS-TWINE.md](INSTRUCTIONS-TWINE.md)** for a full step-by-step g
 
 Generative text is text written by a system following rules you define. Look at these examples:
 
-- [Taroko Gorge](https://nickm.com/taroko_gorge/) by Nick Montfort — a generative poem that runs forever; refresh to see it change
-- [Seabright](http://bpnichol.ca/archive/seabright) — a concrete poetry generator
-- Kate Compton's [Tracery tutorial and visualizer](http://www.crystalcodepalace.com/traceryTut.html) — shows how grammars produce text
-
+- [Taroko Gorge Remixes](https://collection.eliterature.org/3/collection-taroko.html) — generative poems that run forever; refresh to see it change
+- [Sea of Poe](https://seaofpo.vispo.com/) — kinetic and generative poetry
+- [Tracery](https://github.com/galaxykate/tracery) – a story-grammar generation library for javascript
+- Kate Compton's [Tracery tutorial](https://tracery.io/archival/crystalcodepalace/tracerytut.html) — shows how grammars/code produce text
+  
 **As you read, notice:** What stays the same across outputs? What varies? What would you have to change in the rules to make the output feel completely different?
 
 ### Build with Tracery
