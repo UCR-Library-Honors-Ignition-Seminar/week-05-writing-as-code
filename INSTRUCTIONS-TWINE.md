@@ -32,7 +32,7 @@ You write in **passages** (individual screens of text) connected by **links** (t
 
 1. Double-click the **"Untitled Passage"** box on the canvas
 2. This is your **starting passage** — the first thing readers see
-3. Give it a title (top field) and write your opening text
+3. Give it a title (top field) by clicking on **Rename** and write your opening text
 
 **Example:**
 ```
@@ -49,9 +49,8 @@ The text in `[[double brackets]]` becomes a clickable link **and** automatically
 
 ## Step 4: Fill In Your Passages
 
-1. Click **"<- Back"** to return to the story map
-2. You will see new passage boxes appeared — one for each link you wrote
-3. Double-click each one to add its text and more links
+1. You will see new passage boxes appeared — one for each link you wrote
+2. Double-click each one to add its text and more links
 
 **Keep branching:**
 ```
@@ -80,8 +79,8 @@ You make it out. The library door closes behind you with a sound like a period a
 
 ## Step 6: Play-Test Your Story
 
-1. Click **"Play"** (top right of the story map)
-2. A new tab opens with your story running
+1. Click **Passage** and Select **Test from Here** after selecting the desired Passage OR
+2. Click **Build** and Select **Play** to test your story
 3. Click through all your paths — check that every link goes somewhere
 
 ---
@@ -90,10 +89,9 @@ You make it out. The library door closes behind you with a sound like a period a
 
 When you are ready to submit:
 
-1. In the story map, click the **story name** at the bottom of the screen
-2. Select **"Publish to File"**
+1. Click **Build** and Select **"Publish to File"**
 3. A `.html` file downloads to your computer
-4. Upload this file to your GitHub Classroom repo (drag and drop in the web interface)
+4. Upload this file to your GitHub Classroom repo
 
 > The exported `.html` file runs in any browser — your instructor can open it to experience your story.
 
