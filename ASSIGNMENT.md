@@ -6,7 +6,7 @@
 
 ## Before You Start
 
-If you have not yet read a piece of interactive fiction or seen a Tracery grammar in action, do that first — it will change how you approach the assignment. See the **Examples to Explore** section in [README.md](README.md).
+If you have not yet read a piece of interactive fiction or seen a Tracery grammar in action, do that first — it will change how you approach the assignment. Explore the examples in [README.md](README.md).
 
 ---
 
