@@ -27,6 +27,8 @@ Long before graphical interfaces, writers and programmers were doing the same th
 
 ## Session 1 (Day 1): Interactive Fiction with Twine
 
+> **In-class activity:** [INCLASS-ACTIVITIES.md](INCLASS-ACTIVITIES.md)
+
 ### Experience first
 
 Before building, read one short piece of interactive fiction:
@@ -55,6 +57,8 @@ See **[INSTRUCTIONS-TWINE.md](INSTRUCTIONS-TWINE.md)** for a full step-by-step g
 ---
 
 ## Session 2 (Day 2): Generative Text with Tracery
+
+> **In-class activity:** [INCLASS-ACTIVITIES.md](INCLASS-ACTIVITIES.md)
 
 ### Experience first
 
