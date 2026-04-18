@@ -87,6 +87,8 @@ Once the basic sentence works, try one of these:
 - Write two different `"origin"` templates and put both in the list — now the sentence structure itself varies
 - Make the words in one list come from a specific place: all from one book, one era, one mood
 
+**In class, the easiest way to test your grammar is to paste the full `grammar.html` code into an online HTML editor** such as [W3Schools TryIt Editor](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_editor) — paste your code into the left panel and click "Run It" to see the output immediately, no file saving needed.
+
 See [INSTRUCTIONS-TRACERY.md](INSTRUCTIONS-TRACERY.md) for the full template and setup steps.
 
 ---
