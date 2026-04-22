@@ -10,7 +10,7 @@ Tracery is a tool for writing **generative text** — text that a system produce
 
 You write the rules. The system writes the text. Every output is different.
 
-It was created by Kate Compton and used to power thousands of Twitter bots, generative poetry systems, and game dialogue engines.
+It was created by Kate Compton and used to power thousands of Twitter bots (in the past), generative poetry systems, and game dialogue engines.
 
 ---
 
@@ -20,7 +20,7 @@ Before writing your own, explore what Tracery grammars look like when they run.
 
 Go to the [Tracery editor](http://tracery.io/editor/) and click **"Reroll"** several times — each click generates new text from the same rules. Use the dropdown at the top left to try different preloaded grammars (landscape, nightvale, poem).
 
-> **Note:** The editor is for visualization only — it doesn't accept typed input reliably. You will write your own grammar as an HTML file in the next steps.
+> **Note:** The editor is for visualization only — it doesn't accept typed input reliably (But you can replace the words in the existing lists). You will write your own grammar as an HTML file in the next steps.
 
 ---
 
