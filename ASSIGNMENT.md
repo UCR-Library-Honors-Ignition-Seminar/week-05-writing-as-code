@@ -41,7 +41,7 @@ Build a generative text grammar using the HTML template in [INSTRUCTIONS-TRACERY
 **Requirements:**
 - At least **5 named symbol categories** (lists of words/phrases)
 - At least **3 structurally different sentence types** in your `"origin"` list (e.g., a character description, a place, and an event — not just variations of the same sentence)
-- At least **10 screenshots** of different generated outputs
+- **3–5 screenshots** of different generated outputs — pick ones that surprised you or show the range of what your grammar can produce
 
 **To submit:**
 1. Your `grammar.html` file should already be in your repo from Step 3 of the instructions — confirm it is there
@@ -75,7 +75,7 @@ Before submitting, confirm your repo contains:
 
 **If you chose Option B (Tracery):**
 - [ ] `grammar.html` (your generative grammar)
-- [ ] At least 10 screenshots uploaded as image files
+- [ ] 3–5 screenshots uploaded as image files
 - [ ] `reflection.md` with all 4 sections filled in
 
 Then paste your GitHub repo URL into the Canvas assignment and submit.
