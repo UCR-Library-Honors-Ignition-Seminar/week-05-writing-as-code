@@ -1,0 +1,223 @@
+---
+title: "Writing as Code / Code as Writing"
+subtitle: "Session 2 — Text That Writes Itself: Tracery"
+---
+
+## Recap + hook {.center}
+
+Last time: **you** wrote rules, the **reader** chose the path.
+
+. . .
+
+Today: you write rules, and the **machine** writes the text —
+a new poem every second, forever, mostly unread.
+
+. . .
+
+Are you still the author?
+
+## Callback — ELIZA
+
+ELIZA never understood a word. It had a **grammar**: patterns in, templates out.
+
+> "I am X" → "How long have you been X?"
+
+. . .
+
+Tracery is that same trick, aimed at poetry, characters, and bot voices instead of therapy.
+
+# Experience first {background-color="#003da5"}
+
+Individual · 12 minutes
+
+## Read generative text
+
+Open both. Refresh each one **5+ times**:
+
+- **Taroko Gorge Remixes** — <collection.eliterature.org/3/collection-taroko.html> *(pick one remix; watch it run)*
+- **Sea of Poe** — <seaofpo.vispo.com>
+
+## While you read, record
+
+- One line that genuinely **surprised** you
+- One line that felt **flat** or **just random**
+- What stays **constant** across refreshes? What **varies**?
+- What rule would you change to make it feel like a *different* poem?
+
+## Discuss — pair → class
+
+*Pairs 4 min · class 8 min*
+
+1. Is there a **voice** here? Whose?
+2. Split the authorship: how much is the **rule-writer**, how much is the **system**?
+3. When a line lands, is that skill — or luck you're taking credit for?
+
+## Transition {.center}
+
+To judge generated text, you have to know how it's made.
+
+. . .
+
+So let's make some.
+
+## The vocabulary
+
+**Grammar** — the full set of rules (a JSON object)
+
+**Symbol** — a named list of options: `"noun": ["archive", "signal"]`
+
+**Origin** — the starting rule, the sentence template
+
+**Expansion** — replacing `#symbol#` with one random pick from its list
+
+## Tracery syntax
+
+```json
+{
+  "origin": ["The #adj# #noun# #verb# through the #place#."],
+  "adj":    ["slow", "luminous", "broken", "recursive"],
+  "noun":   ["archive", "signal", "voice", "corridor"],
+  "verb":   ["drifts", "compiles", "surfaces", "echoes"],
+  "place":  ["reading room", "terminal", "network", "silence"]
+}
+```
+
+`#symbol#` → a random item from that list, re-rolled every run.
+
+## Trace it by hand
+
+`"The #adj# #noun# #verb# through the #place#."`
+
+. . .
+
+→ The **broken** #noun# #verb# through the #place#.
+
+. . .
+
+→ The broken **voice** #verb# through the #place#.
+
+. . .
+
+→ The broken voice **echoes** through the **network**.
+
+. . .
+
+The machine does exactly this, thousands of times a minute.
+
+## Exercise — expand by hand {background-color="#ffb81c"}
+
+*Pairs · 7 min*
+
+One of you is the "random picker," the other reads the template aloud.
+
+Generate **5 outputs** from the grammar on the previous slide.
+
+. . .
+
+Circle the best one. Why did that combination work?
+
+## Nesting — build complexity
+
+```json
+{
+  "origin": ["#greeting#, traveler. #warning#"],
+  "greeting": ["Well met", "Careful now", "You again"],
+  "warning": ["The #place# is #state# tonight."],
+  "place": ["bridge", "archive", "market"],
+  "state": ["watched", "flooded", "quiet"]
+}
+```
+
+Symbols can contain other symbols.
+
+## Build your grammar {background-color="#ffb81c"}
+
+*Individual · 25 min*
+
+Editor: <w3schools.com/tryit> *(paste a small JS Tracery snippet)* — or explore existing grammars at <tracery.io/editor>
+
+- [ ] 3 structurally different sentences in `origin` — a character, a place, an event
+- [ ] 5+ named symbol lists
+- [ ] 3–4 options per symbol to start
+
+. . .
+
+Run it **10+ times**. Screenshot the outputs that surprise you.
+
+## Share-out
+
+*Group · 10 min*
+
+Read aloud:
+
+- Your **best** generated line
+- Your **worst** generated line
+
+. . .
+
+For the best one: was it your rules, or the roll of the dice?
+
+## Discuss — authorship
+
+- You wrote 20 words and the system made 10,000 sentences. **Who wrote the poem?**
+- Choosing *which* outputs to keep — is curation a creative act, or a cop-out?
+- Why does rule-based text still feel **meaningful** to a reader who knows it's random?
+
+## Optional lens — Voyant Tools
+
+<voyant-tools.org> — paste in any text (a chapter, lyrics, your own writing).
+
+Get word-frequency maps, collocations, trend graphs.
+
+. . .
+
+**Question:** What does a *computational reading* show that a human reading misses — and what does it flatten?
+
+## Synthesis — both sessions {.smaller}
+
+|  | Twine | Tracery |
+|---|---|---|
+| Rules define | the paths | the vocabulary |
+| Who executes | the reader | the system |
+| The author's job | anticipate choices | shape probability |
+
+. . .
+
+Both: **text is structure + constraint.**
+Code and writing are the same craft seen from two angles.
+
+## Assignment
+
+Pick **one**, due end of Week 5:
+
+**Option A — Twine story:** 6+ passages · 3+ meaningful decisions · 2+ endings · export `.html`
+
+**Option B — Tracery grammar:** 5+ symbol categories · 3+ sentence types · 3–5 screenshots of outputs
+
+. . .
+
+Plus **`reflection.md`** (~300 words).
+
+## Reflection prompt
+
+*Write ~300 words:*
+
+> How does writing in Twine or Tracery change how you think about authorship? What decisions did the tool force you to make that you'd never make in a Word document or on a blank page?
+
+Touch on: reader agency · word choice · what the tool made easy · what it made impossible.
+
+## Closing {.center}
+
+You spent two sessions writing rules instead of sentences.
+
+. . .
+
+### The rules were the writing.
+
+# Thank you {background-color="#003da5"}
+
+**Jing Han** · Digital Scholarship Librarian · UCR eScholarship Liaison
+
+<jingh@ucr.edu>
+
+UC Riverside Library

@@ -1,0 +1,220 @@
+---
+title: "Writing as Code / Code as Writing"
+subtitle: "Session 1 — Branching Stories with Twine"
+---
+
+## Opening question {.center}
+
+Think of the last story that surprised you.
+
+. . .
+
+Did the author *decide* you'd be surprised there —
+or did you find it on your own?
+
+. . .
+
+::: {.callout-box}
+Hold that question. Today you build the machine that decides.
+:::
+
+## Two old programs
+
+**ELIZA (1966)** — a "therapist" that only matched patterns in your words and reflected them back. No understanding. People still confided in it.
+
+. . .
+
+**Zork (1977)** — no graphics. You typed `go north`, `take lamp`; it answered in prose. Sold hundreds of thousands of copies.
+
+## The through-line
+
+Writers and programmers have always done the same thing:
+
+. . .
+
+::: {.fragment .fade-in}
+### Write rules that generate an experience.
+:::
+
+. . .
+
+A novel runs the same for every reader.
+
+Interactive fiction runs *differently* every time — because the reader executes it.
+
+## Today {.smaller}
+
+1. **Play** a piece of interactive fiction — 12 min
+2. **Discuss** who's really in control — 10 min
+3. **Map** a branching story on paper — 12 min
+4. **Build** it in Twine — 25 min
+5. **Swap & play** each other's stories — 10 min
+6. **Debrief** + bridge to Session 2 — 15 min
+
+# Experience first {background-color="#003da5"}
+
+Individual · 12 minutes
+
+## Play one
+
+Pick **one** and play to an ending:
+
+- **9:05** — Adam Cadre — <adamcadre.ac/if/905.html> *(~3 min; play it twice)*
+- **Shade** — Andrew Plotkin — <eblong.com/zarf/zweb/shade/> *(surreal; a room that changes)*
+
+. . .
+
+Type commands like `look`, `open door`, `go north`, `examine bed`.
+
+## While you play, notice
+
+- What choices does the author *give* you?
+- What choices are *hidden* or refused?
+- When does it feel like a **story**? When does it feel like a **system**?
+- Where can you tell the author *predicted* what you'd try?
+
+. . .
+
+*Jot one line for each.*
+
+## Discuss — pair → class
+
+*Pairs 4 min · class 6 min*
+
+1. Did your choices feel **consequential** or **predetermined**?
+2. What would be **lost** if this were rewritten as an ordinary short story?
+3. What would be **gained**?
+
+## Transition {.center}
+
+You just read a system from the outside.
+
+. . .
+
+Now build one from the inside —
+and feel every decision the form forces on you.
+
+## The vocabulary
+
+**Passage** — one chunk of text (a room, a moment, a beat)
+
+**Link** — a choice that jumps to another passage
+
+**Branch** — the point where paths split
+
+**Ending** — a passage with no links out
+
+. . .
+
+A Twine story is a *map* of passages joined by links.
+
+## Twine syntax — Harlowe {.smaller}
+
+| You want | You write |
+|---|---|
+| Link to a new passage | `[[Go left]]` |
+| Link with a custom label | `[[Open the door->Hallway]]` |
+| Store a variable | `(set: $hasKey to true)` |
+| Show text conditionally | `(if: $hasKey)[The door opens.]` |
+
+## The branching problem
+
+2 choices → 2 paths
+
+3 choices in a row → 8 endings
+
+10 choices → 1,024 paths
+
+. . .
+
+Every path still has to *land somewhere and mean something*.
+
+. . .
+
+::: {.gold-box}
+**Design move:** let paths **rejoin**. Branches can differ in experience but share a destination.
+:::
+
+## Exercise — map it on paper {background-color="#ffb81c"}
+
+*Individual · 10 min · no computer yet*
+
+Draw boxes for passages, arrows for links. Constraints:
+
+- [ ] 3+ passages
+- [ ] 2+ decision points
+- [ ] 2 different endings
+
+. . .
+
+**Starter prompts:** a room with two doors · a conversation that shifts tone with each reply · a journey where every route ends at the same place.
+
+## Build in Twine {background-color="#ffb81c"}
+
+*Individual · 25 min*
+
+<twinery.org> → **"Use it online"** → New Story *(no account needed)*
+
+- Double-click a passage to edit; type `[[choice text]]` to spawn the next one
+- Match your paper map
+- Hit **▶ Play** often to test every path
+- Make it absurd, poetic, or plain — the point is to feel the rules
+
+## Swap & play
+
+*Pairs · 10 min*
+
+Trade laptops. Play your partner's story to **two** different endings.
+
+Tell them:
+
+- One choice that genuinely made you stop and think
+- One place you wanted a choice and didn't get one
+
+## Debrief — group
+
+- What was the **hardest** narrative decision you had to make?
+- Did thinking in branches change how you think about **cause and choice**?
+- Twine won't let a path just... trail off. Did "every path must resolve" change what you wrote?
+
+## Zoom out — the illusion of choice
+
+Many "choices" in games are cosmetic — different words, same outcome.
+
+. . .
+
+That's not a flaw. It's a technique: the *feeling* of agency is authored too.
+
+. . .
+
+*Depression Quest* (Zoe Quinn) — crosses out choices you can see but can't take. The constraint *is* the message.
+
+## Bridge to Session 2
+
+Today: you wrote rules for **branching** — the reader picks the path.
+
+. . .
+
+Next: you write rules for **generating** — the *system* writes the text, forever, and you never see most of what it makes.
+
+. . .
+
+Same idea. Different knob.
+
+## Before you go
+
+**Exit ticket** — one sentence:
+
+> What did Twine force you to decide that a blank page never would?
+
+. . .
+
+**Assignment preview:** Option A — a 6-passage, 3-decision, 2-ending Twine story. Full details in Session 2.
+
+# Thank you {background-color="#003da5"}
+
+**Jing Han** · Digital Scholarship Librarian · UCR eScholarship Liaison
+
+<jingh@ucr.edu>
+
+UC Riverside Library

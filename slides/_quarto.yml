@@ -1,0 +1,23 @@
+project:
+  title: "Week 5 — Writing as Code"
+  output-dir: _output
+
+format:
+  revealjs:
+    theme: [default, assets/slides.scss]
+    slide-number: true
+    incremental: true
+    transition: slide
+    background-transition: fade
+    progress: true
+    chalkboard: true
+    footer: "Writing as Code / Code as Writing · UCR Library"
+    logo: logo.png
+    width: 1280
+    height: 720
+
+author:
+  - name: "Jing Han"
+    email: jingh@ucr.edu
+    affiliations:
+      - name: "Digital Scholarship Librarian · UCR eScholarship Liaison"
