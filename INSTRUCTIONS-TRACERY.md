@@ -45,7 +45,7 @@ Every run produces a different combination.
 
 You will write your grammar as a small HTML file. This file runs in any browser — no installation needed.
 
-**In your GitHub Classroom repo:**
+**In your Classroom 50 repo:**
 
 1. Click **"Add file"** → **"Create new file"**
 2. Name the file `grammar.html`

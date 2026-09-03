@@ -91,7 +91,7 @@ When you are ready to submit:
 
 1. Click **Build** and Select **"Publish to File"**
 3. A `.html` file downloads to your computer
-4. Upload this file to your GitHub Classroom repo
+4. Upload this file to your Classroom 50 repo
 
 > The exported `.html` file runs in any browser — your instructor can open it to experience your story.
 
