@@ -1,0 +1,16 @@
+---
+title: "Week 5: Writing as Code / Code as Writing — Slides"
+format:
+  html:
+    theme: cosmo
+    page-layout: article
+---
+
+Presentation decks for both class sessions. Open in a browser; use arrow keys, `S` for speaker view, `F` for fullscreen.
+
+- [Session 1 — Interactive Fiction with Twine](session-1-twine.html)
+- [Session 2 — Generative Text with Tracery](session-2-tracery.html)
+
+---
+
+Source: [`slides/`](https://github.com/UCR-Library-Honors-Ignition-Seminar/week-05-writing-as-code/tree/main/slides) · rendered with [Quarto](https://quarto.org).
